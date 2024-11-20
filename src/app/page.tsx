@@ -59,12 +59,12 @@ export default function Home() {
         </Grid2>
       </Grid2>
       <br></br>
-      <Grid2 size={12} padding={1} bgcolor={'#090f13'} color={'white'}>
-        <Grid2 container size={12} paddingTop={5} paddingBottom={5}>
-          <Grid2 size={12} textAlign={'center'} bgcolor={'#171f25'}>
+      <Grid2 size={12} bgcolor={'#090f13'} color={'white'}>
+        <Grid2 container size={12} marginTop={5}>
+          <Grid2 size={12} paddingTop={2} paddingBottom={2} textAlign={'center'} bgcolor={'#171f25'}>
             <Typography variant='h4'>Experiências Profissionais</Typography>
           </Grid2>
-          <Grid2 container size={12} spacing={2}>
+          <Grid2 container size={12} spacing={2} paddingTop={5} paddingBottom={5}>
             {
               informacoes.experiencias.map((experiencia, index) => (
                 <Grid2 key={index} size={{ xs: 12, md: 4 }} padding={1}>
@@ -158,11 +158,11 @@ export default function Home() {
             }
           </Grid2>
         </Grid2>
-        <Grid2 container size={12} paddingTop={5} paddingBottom={5}>
-          <Grid2 size={12} textAlign={'center'} bgcolor={'#171f25'}>
+        <Grid2 container size={12}>
+          <Grid2 size={12} paddingTop={2} paddingBottom={2} textAlign={'center'} bgcolor={'#171f25'}>
             <Typography variant='h4'>Stacks conhecidas</Typography>
           </Grid2>
-          <Grid2 container size={12} spacing={2}>
+          <Grid2 container size={12} spacing={2} paddingTop={5} paddingBottom={5}>
             {
               informacoes.stacks.map((stack, index) => (
                 <Grid2 key={index} size={{ xs: 12, md: 4 }} padding={1}>
@@ -228,11 +228,11 @@ export default function Home() {
             }
           </Grid2>
         </Grid2>
-        <Grid2 container size={12} paddingTop={5} paddingBottom={5} color={'white'}>
-          <Grid2 size={12} textAlign={'center'} paddingTop={5}>
+        <Grid2 container size={12} color={'white'}>
+          <Grid2 size={12} paddingTop={2} paddingBottom={2} textAlign={'center'} bgcolor={'#171f25'}>
             <Typography variant='h4'>Formações</Typography>
           </Grid2>
-          <Grid2 container size={12} spacing={2} marginTop={5}>
+          <Grid2 container size={12} spacing={2}  paddingTop={5} paddingBottom={5}>
             {
               informacoes.formacoes.map((formacao, index) => (
                 <Grid2 key={index} size={{ xs: 12, md: 4 }} padding={1}>
@@ -292,11 +292,11 @@ export default function Home() {
             }
           </Grid2>
         </Grid2>
-        <Grid2 container size={12} paddingTop={5} paddingBottom={5} bgcolor={'#090f13'} color={'white'}>
-          <Grid2 size={12} textAlign={'center'}>
+        <Grid2 container size={12} color={'white'}>
+          <Grid2 size={12} paddingTop={2} paddingBottom={2} textAlign={'center'} bgcolor={'#171f25'}>
             <Typography variant='h4'>Projetos pessoais</Typography>
           </Grid2>
-          <Grid2 container size={12} spacing={2} marginTop={5}>
+          <Grid2 container size={12} spacing={2} paddingTop={5} paddingBottom={5} >
             {
               informacoes.projetos.map((projeto, index) => (
                 <Grid2 key={index} size={{ xs: 12, md: 4 }} padding={1}>

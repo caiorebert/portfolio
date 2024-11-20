@@ -81,6 +81,11 @@ const informacoes = {
         {
             nome: 'JavaScript',
             experiencia: '+4 anos de experiência',
+            frameworks: [
+                'VueJS',
+                'NextJS',
+                'NestJS'
+            ]
         },
         {
             nome: "VueJS",
