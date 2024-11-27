@@ -26,7 +26,7 @@ const informacoes = {
             
             cargo: 'Analista de Sistemas I - A',
             inicio: '24/01/2022',
-            fim: 'Trabalho atual',
+            fim: '27/11/2024',
             periodo: '24/01/2022 - Trabalho atual',
             local: 'Não especificado',
             conteudo: 'Não especificado',
