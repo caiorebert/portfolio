@@ -2,8 +2,7 @@
 
 import Image from 'next/image'
 import styles from './page.module.css'
-import { Accordion, AccordionDetails, AccordionSummary, Collapse, Grid2, List, ListItemButton, ListItemIcon, ListItemText, ListSubheader, Paper, Typography } from '@mui/material'
-import perfil from '../../public/fotos/perfil.jpeg'
+import { Accordion, AccordionDetails, AccordionSummary, AppBar, Button, Collapse, Grid2, List, ListItemButton, ListItemIcon, ListItemText, ListSubheader, Paper, Toolbar, Typography } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SendIcon from '@mui/icons-material/Send';
 import Extension from '@mui/icons-material/Extension';
@@ -22,40 +21,40 @@ export default function Home() {
 
   return (
     <Grid2 container size={12}>
-      <Grid2 container size={12} height={200} bgcolor={'#090f13'}>
-        
-      </Grid2>
+      <AppBar position="static" style={{ backgroundColor: '#090f13' }}>
+        <Toolbar>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Meu Portfólio
+          </Typography>
+
+          <Button color="inherit">
+            HOME
+          </Button>
+        </Toolbar>
+      </AppBar>
       <Grid2 container size={12} bgcolor={'#171f25'}>
-        <Grid2 size={{ xs:12, md: 2 }} className={styles.gridFoto}>
-          <Paper
-            elevation={3}
-            style={{
-              backgroundColor: '#171f25',
-            }}
-          >
-            <Image
-              style={{marginTop: -100, borderRadius: 20, paddingBottom: 10}}
-              src={perfil}
-              alt="Perfil"
-              width={200}
-              height={250} />
-          </Paper>
+        <Grid2 size={{ xs:12, md: 6 }} className={styles.gridTextoFoto}>
+          <div >
+            <h1 style={{color: 'white'}}>
+              <strong>Caio Rebert</strong><br></br>
+            </h1>
+            <h2 style={{color: 'white', marginTop: 10}}>
+              <small>Desenvolvedor Full Stack</small>
+            </h2>
+            <h2>
+              <small>24 anos</small>
+            </h2>
+          </div>
         </Grid2>
-        <Grid2 size={{ xs:12, md: 4 }} className={styles.gridTextoFoto}>
-          <h1 style={{color: 'white'}}>
-            <strong>Caio Rebert</strong><br></br>
-          </h1>
-          <h2 style={{color: 'white', marginTop: 10}}>
-            <small>Desenvolvedor Full Stack</small>
-          </h2>
+        <Grid2 size={{ xs:12, md: 1}} className={styles.gridTextoFoto}>
+          
         </Grid2>
-        <Grid2 size={{ xs:12, md: 4 }} className={styles.gridTextoFoto}>
-          <p>
-            <b>Idade:</b> 22 anos
-          </p>
-          <p>
-            <b>Email:</b> caiorebert070802.cr@gmail.com
-          </p>
+        <Grid2 size={{ xs:12, md: 3 }} className={styles.gridFoto}>
+          <img
+            style={{borderRadius: 20, margin: 'auto', position: 'relative', display: 'block'}}
+            src="/fotos/perfil.png"
+            alt="Perfil"
+            width={'100%'}/>
         </Grid2>
       </Grid2>
       <br></br>

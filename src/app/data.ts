@@ -46,9 +46,38 @@ const informacoes = {
                 'Oracle',
                 'PostgreSQL'
             ]
+        },
+        {
+            empresa: 'Claro Empresas',
+            cargo: 'Desenvolvedor Full Stack Pleno',
+            inicio: '16/12/2024',
+            fim: '16/08/2026',
+            periodo: '16/12/2024 - 16/08/2026',
+            local: 'Campinas, SP',
+            conteudo: 'Não especificado',
+            linguagens: [
+                'PHP',
+                'JavaScript',
+            ],
+            frameworks: [
+                'Laravel',
+                'VueJS'
+            ],
+            bancos: [
+                'MySql'
+            ]
         }
     ],
     formacoes: [
+        {
+            instituicao: 'Universidade Federal do Rio Grande do Norte',
+            curso: 'Técnico em Informática para Internet',
+            inicio: '2019',
+            fim: '2021',
+            periodo: '2019 - 2021',
+            local: 'Natal, RN',
+            conteudo: 'Não especificado'
+        },
         {
             instituicao: 'Universidade Federal do Rio Grande do Norte',
             curso: 'Bacharelado em Tecnologia da Informação',
@@ -58,20 +87,11 @@ const informacoes = {
             local: 'Natal, RN',
             conteudo: 'Não especificado'
         },
-        {
-            instituicao: 'Universidade Federal do Rio Grande do Norte',
-            curso: 'Técnico em Informática para Internet',
-            inicio: '2019',
-            fim: '2021',
-            periodo: '2019 - 2021',
-            local: 'Natal, RN',
-            conteudo: 'Não especificado'
-        }
     ],
     stacks: [
         {
             nome: 'PHP',
-            experiencia: '+4 anos de experiência',
+            experiencia: '+5 anos de experiência',
             frameworks: [
                 'Laravel',
                 'Yii Framework',
@@ -80,7 +100,7 @@ const informacoes = {
         },
         {
             nome: 'JavaScript',
-            experiencia: '+4 anos de experiência',
+            experiencia: '+5 anos de experiência',
             frameworks: [
                 'VueJS',
                 'NextJS',
@@ -89,7 +109,7 @@ const informacoes = {
         },
         {
             nome: "VueJS",
-            experiencia: "+-3 anos de experiência",
+            experiencia: "+-5 anos de experiência",
             frameworks: [
                 'NuxtJS'
             ]
